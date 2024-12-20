@@ -2,20 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ## Colors
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+### Primary
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+- Cyan: hsl(180, 66%, 49%)
+- Dark Violet: hsl(257, 27%, 26%)
+
+### Secondary
+
+- Red: hsl(0, 87%, 67%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 75%)
+- Grayish Violet: hsl(257, 7%, 63%)
+- Very Dark Blue: hsl(255, 11%, 22%)
+- Very Dark Violet: hsl(260, 8%, 14%) */
