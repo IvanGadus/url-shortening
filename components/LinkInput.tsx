@@ -17,8 +17,13 @@ export default function LinkInput({ setLinks, loading }: MyComponentProps) {
 	const handleForm = (e: FormData) => {
 		// e.preventDefault();
 		const urlPattern = /^(https:\/\/|http:\/\/)/;
+		const badUrlPattern = /^(https:\/\/cleanuri.com)/;
 
-		if (inputValue === "" || !urlPattern.test(inputValue)) {
+		if (
+			inputValue === "" ||
+			!urlPattern.test(inputValue) ||
+			badUrlPattern.test(inputValue)
+		) {
 			console.log("errorik");
 			console.log(inputValue);
 			setIsError(true); // Nastav chybu, ak je prázdny alebo nesprávny formát
