@@ -14,14 +14,7 @@ export default function ShortenSection() {
 			</div>
 			<div className="w-full bg-primaryGrey flex flex-col px-11 md:px-20 lg:px-36 pb-20">
 				{links.map((link, idx) => {
-					return (
-						<LinksComp
-							link={link}
-							key={idx}
-							setLoading={setLoading}
-							loading={loading}
-						/>
-					);
+					return <LinksComp link={link} key={idx} setLoading={setLoading} />;
 				})}
 			</div>
 		</div>

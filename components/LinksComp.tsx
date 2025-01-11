@@ -1,12 +1,11 @@
-import React, { Suspense, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 type LinksProps = {
 	link: string;
 	setLoading: React.Dispatch<React.SetStateAction<boolean>>;
-	loading: boolean;
 };
 
-export default function LinksComp({ link, setLoading, loading }: LinksProps) {
+export default function LinksComp({ link, setLoading }: LinksProps) {
 	const [copied, setCopied] = useState(false);
 	const [newLink, setNewLink] = useState("");
 

@@ -11,10 +11,12 @@ export default function LinkInput({ setLinks, loading }: MyComponentProps) {
 	const [isError, setIsError] = useState(false);
 
 	useEffect(() => {
-		inputValue !== "" && setIsError(false);
+		if (inputValue !== "") {
+			setIsError(false);
+		}
 	}, [inputValue]);
 
-	const handleForm = (e: FormData) => {
+	const handleForm = () => {
 		// e.preventDefault();
 		const urlPattern = /^(https:\/\/|http:\/\/)/;
 		const badUrlPattern = /^(https:\/\/cleanuri.com)/;
@@ -40,7 +42,7 @@ export default function LinkInput({ setLinks, loading }: MyComponentProps) {
 			className="flex flex-col mx-11 md:mx-20 lg:mx-36 bg-primaryPurple rounded-xl py-7 bg-[url('/bg-shorten-mobile.svg')] bg-no-repeat bg-right-top  sm:bg-[url('/bg-shorten-desktop.svg')] sm:pl-5 md:px-10 z-20 t-10 scroll-mt-10"
 		>
 			<form
-				action={(e) => handleForm(e)}
+				action={() => handleForm()}
 				className="flex flex-col justify-evenly sm:flex-row sm:items-center sm:justify-around sm:h-20"
 			>
 				<div className="flex flex-col px-5 relative sm:w-full sm:px-0">

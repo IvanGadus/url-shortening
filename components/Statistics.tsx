@@ -1,10 +1,7 @@
-import Image from "next/image";
 import React from "react";
 import StatisticItem from "./StatisticItem";
 
-type Props = {};
-
-export default function Statistics({}: Props) {
+export default function Statistics() {
 	const statisticsData = [
 		{
 			title: "Brand Recognition",
