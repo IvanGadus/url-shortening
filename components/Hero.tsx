@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
 	return (
-		<div className="w-full relative h-[calc(100dvh-6rem)] min-h-max overflow-clip flex flex-col sm:flex-row-reverse sm:py-20 md:pl-20 lg:pl-36 sm:items-center sm:max-h-[30%] px-11 sm:px-0 sm:bg-white md:pb-32 pb-10 sm:h-[calc(100dvh-6rem)]">
+		<div className="w-full relative h-[calc(100dvh)] min-h-max overflow-clip flex flex-col sm:flex-row-reverse sm:py-20 md:pl-20 lg:pl-36 sm:items-center sm:max-h-[30%] px-11 sm:px-0 sm:bg-white md:pb-32 pb-10 sm:h-[calc(100dvh-6rem)]">
 			<Image
 				src="./illustration-working.svg"
 				alt="working illustration"
