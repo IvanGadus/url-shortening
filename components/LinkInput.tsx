@@ -39,7 +39,7 @@ export default function LinkInput({ setLinks, loading }: MyComponentProps) {
 	return (
 		<div
 			id="shorten"
-			className="flex flex-col mx-11 md:mx-20 lg:mx-36 bg-primaryPurple rounded-xl py-7 bg-[url('/bg-shorten-mobile.svg')] bg-no-repeat bg-right-top  sm:bg-[url('/bg-shorten-desktop.svg')] sm:pl-5 md:px-10 z-20 t-10 scroll-mt-10"
+			className="flex flex-col mx-11 md:mx-20 lg:mx-36 bg-primaryPurple rounded-xl py-7 bg-[url('/bg-shorten-mobile.svg')] bg-no-repeat bg-right-top sm:bg-[url('/bg-shorten-desktop.svg')] sm:pl-5 md:px-10 z-20 scroll-mt-10"
 		>
 			<form
 				action={() => handleForm()}
