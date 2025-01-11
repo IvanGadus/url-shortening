@@ -27,9 +27,11 @@ export default function Statistics({}: Props) {
 	];
 
 	return (
-		<div className="bg-primaryGrey px-11 md:px-20 lg:px-36 pb-5">
+		<div className="bg-primaryGrey px-11 md:px-20 lg:px-36 pb-20">
 			<div className="flex flex-col items-center pb-20">
-				<h2 className="text-3xl font-bold pb-5">Advanced Statistics</h2>
+				<h2 className="text-3xl font-bold pb-5 text-center">
+					Advanced Statistics
+				</h2>
 				<p className="text-textGrayish text-center max-w-lg ">
 					Track how your link are performing across the web with our advaced
 					statistics dashboard.

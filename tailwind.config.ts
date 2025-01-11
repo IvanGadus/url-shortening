@@ -15,6 +15,7 @@ export default {
 				primaryGrey: "hsl(0, 0%, 75%)",
 				primaryCyan: "hsl(180, 66%, 49%)",
 				textGrayish: "hsl(257, 7%, 63%)",
+				primaryDarkFooter: "#232027",
 			},
 		},
 	},
